@@ -17,8 +17,9 @@ body {
 }
 
 .tab th {
-    padding-left: 15px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
 }
 
 .nav img {
@@ -26,7 +27,11 @@ body {
     height: 71px;
 }
 
-/* Section */
+.homepage {
+    border-bottom: 1pt solid #F2D0C4;
+}
+
+/* Section about summary */
 .herolmg {
     height: 600px;
     padding: 25px
@@ -67,6 +72,100 @@ button {
     font-family: Garamond;
     font-size: 21px;
     color: #F2D0C4;
+}
+
+/* Section my Skills*/ 
+
+.title { 
+    color: #F2D0C4;
+    padding: 3%; 
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #445CA6;
+    color: #F2D0C4;
+    margin: 0 auto;
+    width: 1370px;
+}
+
+#research {
+    height: 30px;
+    width: 35px;
+}
+
+#interview {
+    height: 40px;
+    width: 40px;
+}
+
+#empathy {
+    height: 40px;
+    width: 40px;
+}
+
+.flexContainer div {
+    padding: 12px;
+}
+
+.flexContainer p {
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flexContainer div img {
+    padding-left: 38%;
+}
+
+.flexContainer title { 
+    width: 3000%;
+}
+
+/* Section My Work */
+.workGrid{
+    display: grid;
+    background-color: #445ca6;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 1370px;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "yum_logo yum_content"
+    "imagine_logo imagine_content"
+    "safe_logo safe_content";
+}
+
+#yum_logo{
+    grid-area: yum_logo;
+    background-image: url("../images/yumlogo.PNG");
+    height: 90%;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#yum_content{
+    grid-area: yum_content;
+}
+
+#imagine_logo{
+    grid-area: imagine_logo;
+}
+
+#imagine_content{
+    grid-area: imagine_content;
+}
+
+#safe_logo{
+    grid-area: safe_logo;
+}
+
+#safe_content{
+    grid-area: safe_content;
 }
 
 /* Footer */
