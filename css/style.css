@@ -44,6 +44,7 @@ body {
     background-color: #445CA6;
     width: 1370px;
     margin: 0 auto;
+    color: #F2D0C4;
 }
 
 .content img{
@@ -211,7 +212,7 @@ button {
 #LinkedIn {
     grid-area: LinkedIn;
     background-image: url("../images/linkedin1.PNG");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     align-self: flex-start;
     padding: 25px;
@@ -220,8 +221,8 @@ button {
 #Instagram {
     grid-area: Instagram;
     background-image: url("../images/instagram1.PNG");
-    background-size: contain;
-    background-repeat: no-repeat
+    background-size: 95%;
+    background-repeat: no-repeat;
     padding: 30px;
 }
 
@@ -229,7 +230,7 @@ button {
     grid-area: Mail;
     background-image: url("../images/mail1.PNG");
     background-size: contain;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
     padding: 30px;
 }
 
